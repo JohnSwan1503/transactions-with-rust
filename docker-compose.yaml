@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  db:
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: diesel
+    image: postgres
+    restart: always
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+        
